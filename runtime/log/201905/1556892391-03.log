@@ -1,0 +1,27 @@
+---------------------------------------------------------------
+[ 2019-05-03T22:06:31+08:00 ] 121.233.83.200 GET /uploads/20180919/4a4bacc81e417b74b30c28d1c59fb145.png
+[ info ] diuzha.cn/uploads/20180919/4a4bacc81e417b74b30c28d1c59fb145.png [运行时间：0.058221s][吞吐率：17.18req/s] [内存消耗：1,911.74kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://diuzha.cn/home/task/detail/id/20.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,437 @@
+---------------------------------------------------------------
+[ 2019-05-03T23:59:10+08:00 ] 121.233.83.200 GET /uploads/20180919/0ec589718db0cdbe9f495bc950bf88d3.png
+[ info ] diuzha.cn/uploads/20180919/0ec589718db0cdbe9f495bc950bf88d3.png [运行时间：0.065473s][吞吐率：15.27req/s] [内存消耗：1,915.12kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/home/task/detail/id/20.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /home/account.html
+[ info ] diuzha.cn/home/account.html [运行时间：0.036216s][吞吐率：27.61req/s] [内存消耗：4,449.37kb] [文件加载：64]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'account',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Account->index[ /www/wwwroot/diuzha.cn/app/home/controller/Account.php ]
+[ info ] [ VIEW ] ./views/home/mobile/account/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'msg_levels',
+  5 => 'task_num',
+  6 => 'join_num',
+  7 => 'audit_num',
+  8 => 'is_sign',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000196s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.002051s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member` WHERE  `uid` = 177 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member` WHERE  `uid` = 177 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_sign` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_sign` WHERE  `uid` = 177  AND `create_time` BETWEEN 1556812800 AND 1556899199 LIMIT 1 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task` WHERE  `uid` = 177 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS num FROM tb_task_join task_join INNER JOIN tb_task task ON task_join.task_id=task.id WHERE task_join.uid=177 AND task_join.delflag=1 AND task.is_display=1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE uid=177 AND is_complete=0  AND join_num>0 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member` WHERE  (  uid = 177 ) LIMIT 1 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member_level` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member_level` WHERE  (  level = 2 ) LIMIT 1 [ RunTime:0.000112s ]
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/images/template3/ques.png
+[ info ] diuzha.cn/static/home/images/template3/ques.png [运行时间：0.015381s][吞吐率：65.02req/s] [内存消耗：1,941.38kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/images/template3/autoBuy.png
+[ info ] diuzha.cn/static/home/images/template3/autoBuy.png [运行时间：0.047641s][吞吐率：20.99req/s] [内存消耗：1,914.36kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/mobile/fonts/mui.ttf
+[ info ] diuzha.cn/static/home/mobile/fonts/mui.ttf [运行时间：0.045242s][吞吐率：22.10req/s] [内存消耗：1,912.53kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'mobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'origin' => 'http://diuzha.cn',
+  'accept' => '*/*',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'fonts' => 'mui.ttf',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/images/template3/helpCenter.png
+[ info ] diuzha.cn/static/home/images/template3/helpCenter.png [运行时间：0.067481s][吞吐率：14.82req/s] [内存消耗：1,914.36kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/images/template3/record.png
+[ info ] diuzha.cn/static/home/images/template3/record.png [运行时间：0.085289s][吞吐率：11.72req/s] [内存消耗：1,914.36kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:16+08:00 ] 121.233.83.200 GET /static/home/mobile/fonts/mui.ttf
+[ info ] diuzha.cn/static/home/mobile/fonts/mui.ttf [运行时间：0.024310s][吞吐率：41.14req/s] [内存消耗：1,911.85kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'origin' => 'http://diuzha.cn',
+  'accept' => '*/*',
+  'referer' => 'http://diuzha.cn/static/home/mobile/css/geren.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-03T23:59:17+08:00 ] 121.233.83.200 GET /home/mytask.html
+[ info ] diuzha.cn/home/mytask.html [运行时间：0.030580s][吞吐率：32.70req/s] [内存消耗：4,170.29kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'mytask',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/home/account.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Mytask->index[ /www/wwwroot/diuzha.cn/app/home/controller/Mytask.php ]
+[ info ] [ VIEW ] ./views/home/mobile/mytask/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'tasks',
+  5 => 'setting',
+  6 => 'pageCount',
+  7 => 'category_type',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000193s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member` WHERE  `uid` = 177 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_member` WHERE  `uid` = 177 LIMIT 1 [ RunTime:0.000140s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE uid=177 AND is_complete=0  ORDER BY id DESC LIMIT 0,15 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE uid=177 AND is_complete=0 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000085s ]
+---------------------------------------------------------------
+[ 2019-05-03T23:59:50+08:00 ] 121.233.83.200 GET /
+[ info ] diuzha.cn/ [运行时间：0.039443s][吞吐率：25.35req/s] [内存消耗：4,520.49kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/diuzha.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000229s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1556899190 AND start_time<1556899190 AND end_time>1556899190 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000113s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1556899190 AND start_time<1556899190 AND end_time>1556899190 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000099s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000107s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000104s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1556899190 AND start_time<1556899190 AND end_time>1556899190 [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2019-05-03T23:59:52+08:00 ] 121.233.83.200 GET /home/account.html
+[ info ] diuzha.cn/home/account.html [运行时间：0.027775s][吞吐率：36.00req/s] [内存消耗：3,824.84kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'account',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://diuzha.cn/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Account->index[ /www/wwwroot/diuzha.cn/app/home/controller/Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000238s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000181s ]
+---------------------------------------------------------------
+[ 2019-05-03T23:59:53+08:00 ] 121.233.83.200 GET /home/auth/login.html
+[ info ] diuzha.cn/home/auth/login.html [运行时间：0.028208s][吞吐率：35.45req/s] [内存消耗：3,879.20kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'auth',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://diuzha.cn/home/account.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Auth->login[ /www/wwwroot/diuzha.cn/app/home/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/home/mobile/auth/login.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000124s ]

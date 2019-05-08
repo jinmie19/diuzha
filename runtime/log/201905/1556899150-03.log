@@ -1,0 +1,29 @@
+---------------------------------------------------------------
+[ 2019-05-03T23:59:10+08:00 ] 121.233.83.200 GET /uploads/20180919/c847609ed63324c8b9d68bace808cf0b.png
+[ info ] diuzha.cn/uploads/20180919/c847609ed63324c8b9d68bace808cf0b.png [运行时间：0.049170s][吞吐率：20.34req/s] [内存消耗：1,915.12kb] [文件加载：41]
+[ info ] [ LANG ] /www/wwwroot/diuzha.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '404',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'diuzha.cn',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; ZUK Z2131 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.134 Mobile Safari/537.36 LeBrowser/8.2.9',
+  'referer' => 'http://diuzha.cn/home/task/detail/id/20.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'member=eyJ1aWQiOjE3NywidXNlcm5hbWUiOiIxMzExMTExMTExMSIsImdlbmRlciI6MCwicGFyZW50X3VpZCI6MCwiZXhwZXJpZW5jZV92YWx1ZSI6IjAuMDAiLCJsZXZlbCI6MiwiaW52aXRhdGlvbl9jb2RlIjpudWxsLCJvYXRoX3R5cGUiOjAsIm9wZW5pZCI6bnVsbCwiY3JlZGl0MSI6IjkyLjAwIiwiY3JlZGl0MiI6IjExMTEwOTQyLjMwIiwicGFzc3dvcmQiOiIzYjJkY2UxM2U5OWFlZWQ0MWVhMTA2ZGI3ZDZlM2Q4YiIsInNhbHQiOiJlcjl6MzlocyIsImF2YXRhciI6IiIsImVtYWlsIjoiIiwiaXNfYmluZF9lbWFpbCI6MCwiYWxpcGF5X2FjY291bnQiOm51bGwsImFsaXBheV9yZWFsbmFtZSI6bnVsbCwiaXNfYmluZF9hbGlwYXkiOjAsIm1vYmlsZSI6IjE3MzI4Nzg3NzgyIiwiaXNfYmluZF9tb2JpbGUiOjEsImNoYW5uZWxfaWQiOjAsImNoYW5uZWxfbmFtZSI6bnVsbCwiY2hhbm5lbF9kZXNjIjpudWxsLCJpc19iaW5kX2NoYW5uZWwiOjAsImlzX2NoZWNrIjoxLCJpc19kZWwiOjAsImludml0ZV90b3RhbCI6MSwiaW52aXRlX3JlYmF0ZSI6IjguMTAiLCJzaWduIjoiIiwic2lnbl9jb250aW51ZSI6MSwidXBkYXRlX3RpbWUiOiIyMDE5LTA0LTI5IDAwOjA5OjQxIiwiY3JlYXRlX3RpbWUiOiIyMDE5LTA0LTA4IDAwOjI1OjM0IiwiaW1nIjoidHAxNTU2Njk5ODkyMTYucG5nIn0%3D',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,594 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:37:"./views/home/mobile/task/detail.phtml";i:1557237887;}*/ ?>
+<!doctype html>
+<html>
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>[<?php echo !empty($item['id'])?$item['id']:''; ?>]<?php echo !empty($item['title'])?$item['title']:''; ?>,佣金<?php echo !empty($item['unit_price'])?$item['unit_price']:''; ?>元</title>
+    <link rel="stylesheet" href="/static/home/mobile/css/bootstrap.css">
+    <link href="/static/home/mobile/css/reset_5.css" rel="stylesheet" type="text/css" />
+    <link href="/static/home/mobile/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/static/home/mobile/css/font-awesome.min.css">
+    <link href="/static/home/mobile/css/lightbox.min.css" rel="stylesheet" type="text/css" />
+<!--    <link href="/static/home/mobile/css/new_style.css" rel="stylesheet" type="text/css" />-->
+    <link href="/static/home/mobile/css/swiper.min.css" type="text/css" rel="stylesheet">
+    <link href="/static/home/mobile/css/new_page.css" rel="stylesheet" type="text/css" />
+    <link href="/static/home/mobile/css/new_style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/static/home/mobile/css/base64face.css" />
+    <link rel="stylesheet" type="text/css" href="/static/home/mobile/css/baseface3.css" />
+    <link href="/static/home/mobile/css/workinfo_1.css" rel="stylesheet" type="text/css" />
+    <link href="/static/home/mobile/css/workinfo_2.css" rel="stylesheet" type="text/css" />
+    <link href="/static/home/mobile/css/workinfo_3.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/static/plugins/dialog/css/dialog.css" />
+    <link rel="stylesheet" href="/static/home/mobile/css/layui.css">
+    <style type="text/css">
+      body{
+      	-webkit-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+      }
+        .task-list-remain-num span {
+            width: 33.33%;
+            float: left;
+            text-align: center;
+        }
+        .paging {
+            padding: 30px 0;
+        }
+        .dialog {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10001;
+            width: 100%;
+            height: 100%;
+        }
+        .dialog-content {
+            width: 70%;
+        }
+        .dialog-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10002;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .header .main a.user_opera_btn {
+            display:block;
+            width:56px;
+            font-size:12px;
+            line-height:22px;
+            color:#FE4B1C;
+            text-align:center;
+            border:1px solid #FE4B1C;
+            box-sizing: border-box;
+            border-radius:4px;
+        }
+        .newinfo{
+            padding-top: 60px;
+            background-color: #f4f4f8;
+        }
+      .blue{
+          font-size: 12px;
+    	  color: #4690fa;
+         display: inline-block;
+         border: 1px solid #4690fa;
+         border-radius: 5px;
+         padding: 2px 6px;
+         margin-right: 10px;
+		}
+      .yellow{
+      	color: #f88b16;
+		border-color: #f88b16;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 5px;
+		padding: 2px 6px;
+		margin-right: 10px;
+        border:1px solid #f88b16;
+      }
+      .price_new{
+         width: 80px;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 6px 0 8px;
+       line-height: 16px;
+       color: #FF2424;
+       font-weight: 700;
+      }
+      a.user_opera_btn{
+        display: block;
+        width: 56px;
+        font-size: 12px;
+        line-height: 22px;
+        color: #FE4B1C;
+        text-align: center;
+        border: 1px solid #FE4B1C;
+        box-sizing: border-box;
+        border-radius: 4px
+      }
+      .hiddenBlack{
+        	position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			background-color: #000;
+			filter: alpha(Opacity=80);
+			opacity: .8;
+			display: none;
+            height:100%;
+      }
+      .saveimgbtn{
+       		left: 0;
+			right: 0;
+			bottom: 0;
+			display: none;
+			position: fixed;
+            z-index:10000;
+      }
+      .add{height:100%;overflow:hidden;}
+    </style>
+</head>
+<body data-offset="50" id="htmlBody">
+<header class="site-header header-fixed">
+    <input type="hidden" id="taskId">
+    <a onclick="history.back()" class="back"></a>
+    <div class="tit-name" id="title_txt">任务详情</div>
+    <!--<?php if($is_can_op == 1): ?>-->
+    <!--<a href="/home/mytaskaudit/index/id/<?php echo !empty($item['id'])?$item['id']:''; ?>.html" class="sc" id="schide_sh">审核</a>-->
+    <!-- <a href="#" class="sc" style="right: 110px;" id="schide_sh">审核</a>
+    <a href="#" class="sc" id="schide" style="right:60px;" onclick="TaskDetail.hideTask()">下架</a>
+    <a href="#" class="sc" id="sc">隐藏</a>
+    <a href="#" class="sc" id="qx">取消隐藏</a> -->
+    <!--<?php endif; ?> -->
+   
+</header>
+<div  class="container Ftp Fbm newinfo" data-v-newpage="">
+    <div data-v-newpage="" class="header van-hairline--bottom">
+        <div data-v-newpage="" class="van-row van-row--flex van-row--align-center" >
+            <div data-v-newpage=""  class="avatar" style="background-image: url(<?php echo !empty($item['userimg'])?$item['userimg']:'/static/home/mobile/picture/user.png'; ?>);margin-top: -88px">
+                <div data-v-newpage="" class="uid"> <?php echo !empty($item['uid'])?$item['uid']:''; ?></div>
+              
+            </div>
+           <a href="#" class="user_opera_btn" onclick="followUser('<?php echo $item['uid']; ?>');" style="position: absolute;margin-left: 2px;">+关注</a>
+            <div data-v-newpage="" class="main">
+                <p data-v-newpage="" class="title van-ellipsis" style="margin-bottom: 5px"> <?php echo $item['title']; ?></p>
+                <div data-v-newpage="" >
+                    <span data-v-newpage="" class="van-tag van-tag--mark van-tag--medium blue" > <?php echo $item['category_name']; ?></span>
+                    <span data-v-newpage="" class="van-tag van-tag--medium yellow"> <?php echo $item['appName']; ?></span>
+                   
+                </div>
+
+            </div>
+            <div data-v-newpage="" class="price_new"  style="margin-top: -88px">
+                <p data-v-newpage="" style="font-size: 12px;">赏金/元</p>
+                <p data-v-newpage="" style="font-size: 18px;"><?php echo $item['unit_price']; ?></p>
+            </div>
+        </div>
+        <div data-v-newpage="" class="van-row van-row--flex van-row--align-center" style="margin-top: -50px;">
+            <div data-v-newpage="" class="group">
+                <p data-v-newpage="" class="value"><?php echo $item['sucess']; ?></p>
+                <p data-v-newpage="" class="label">已完成</p></div>
+            <div data-v-newpage="" class="group van-hairline--left">
+                <p data-v-newpage="" class="value"><?php echo $item['ticket_num']-$item['join_num']; ?></p>
+                <p data-v-newpage="" class="label">总剩余数</p></div>
+            <div data-v-newpage="" class="group van-hairline--left">
+                <p data-v-newpage="" class="value" style="font-size: 15px;">全额托管</p>
+                <p data-v-newpage="" class="label">托管赏金</p>
+            </div>
+        </div>
+        <div data-v-newpage="" class="tips" style="margin-top: 18px;">
+            <p data-v-newpage="" >注意：通过率低的悬赏，请谨慎参与；打钱、转账、投资的悬赏请勿参与，否则后果自负。</p>
+        </div>
+    </div>
+    <div data-v-newpage="" class="van-collapse van-hairline--top-bottom" style="margin-top: 10px;">
+        <div data-v-newpage="" class="desc van-collapse-item">
+            <div data-v-newpage="" class="van-cell van-cell--clickable van-collapse-item__title van-collapse-item__title--expanded">
+                <div data-v-newpage="" class="van-cell__title">
+                    <div data-v-newpage="" class="title">任务说明</div>
+                </div>
+                <div data-v-newpage="" class="van-cell__value">
+                    <span data-v-newpage="" class="van-tag van-tag--plain van-tag--medium van-hairline--surround" style="color: rgb(255, 89, 43);">悬赏号<?php echo !empty($item['id'])?$item['id']:''; ?></span></div>
+                <i data-v-newpage="" class="van-icon van-icon-arrow van-cell__right-icon"><!----></i>
+            </div>
+            <div data-v-newpage="" class="van-collapse-item__wrapper" style="">
+                <div data-v-newpage="" class="van-collapse-item__content"><?php echo !empty($item['detail'])?$item['detail']:''; ?></div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div data-v-newpage="" class="steps van-hairline--top" style="margin-top: 10px;margin-bottom: 20px">
+        <div data-v-newpage="" class="van-cell">
+            <div data-v-newpage="" class="van-cell__title">
+                <span data-v-newpage="">任务步骤</span>
+            </div>
+        </div>
+       <?php if(!empty($item['about_url'])): ?>
+        <div data-v-newpage="" class="step-item">
+            <div data-v-newpage="" class="van-row van-row--flex van-row--justify-space-between">
+                <p data-v-newpage="" class="title">文字说明</p>
+            </div>
+            <!---->
+            <div data-v-newpage="" class="wrap van-row van-row--flex van-row--align-center" style="margin-left: -6px; margin-right: -6px;">
+                <div  data-v-newpage="" class="wrap-item van-col van-col--12" style="padding-left: 6px; padding-right: 6px; width:70%">
+                    <div data-v-newpage="" class="input van-cell van-field">
+                        <div class="van-cell__value van-cell__value--alone">
+                            <div class="van-field__body">
+                                <input type="text" id="url" placeholder="<?php echo $item['about_url']; ?>" disabled="disabled" class="van-field__control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-newpage="" class="wrap-item van-col van-col--12" style="padding-left: 6px; padding-right: 6px;width:30%">
+                    <button data-v-newpage="" class="van-button van-button--warning van-button--small" id="task_url">
+                        <span data-v-newpage="" class="van-button__text" >复制数据</span>
+                    </button>
+                </div>
+            </div>
+            <!----> <!----> <!----> <!---->
+        </div>
+        <?php endif; if(!empty($operate_steps)): ?>
+        <div data-v-newpage="" class="step-item">
+            <?php if(is_array($operate_steps) || $operate_steps instanceof \think\Collection || $operate_steps instanceof \think\Paginator): $k = 0; $__LIST__ = $operate_steps;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$operate_step): $mod = ($k % 2 );++$k;?>
+            <div data-v-newpage="" class="van-row van-row--flex van-row--justify-space-between">
+                <div data-v-newpage="" class="icon"><?php echo $k; ?></div>
+                <p data-v-newpage="" class="title"><?php echo $operate_step['content']; ?></p>
+            </div>
+            <!----> <!----> <!----> <!---->
+            <?php if(!empty($operate_step['image'])): ?>
+            <div data-v-newpage="" class="wrap van-row van-row--flex" style="margin-left: -6px; margin-right: -6px;">
+              
+                <div data-v-newpage="" class="wrap-item van-col van-col--12" style="padding-left: 6px; padding-right: 6px;margin-bottom:6px;">
+                    <a data-lightbox="thumbs-set" href="<?php echo to_media($operate_step['image']); ?>"><img data-v-newpage="" src="<?php echo to_media($operate_step['image']); ?>" class="image"></a>
+                    <div data-v-newpage="" class="tag-right">说明图</div>
+                </div>
+             
+            </div>
+             <?php endif; ?>
+            <p></p>
+            <p></p>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+            <!---->
+        </div>
+        <?php endif; if(!empty($item['thumbs'])): ?>
+      
+		<div class="fujian cl">
+
+            <div class="swiper-container">
+			
+					 <p class="tit">
+     <a class=" js-component-link nui-txt-link" style="outline: 0px;cursor: pointer;padding: 5px 8px 4px;border-radius: 3px;background-color: #fde03f;font-family: &quot;Microsoft Yahei&quot;, verdana;white-space: nowrap;color: #834100;text-align: center;">&nbsp;+ 请按以下“审核图例”提交审核验证 +&nbsp;</a>				
+					</p><br><br>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <?php if(is_array($item['thumbs']) || $item['thumbs'] instanceof \think\Collection || $item['thumbs'] instanceof \think\Paginator): $i = 0; $__LIST__ = $item['thumbs'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$thumb): $mod = ($i % 2 );++$i;?>
+                    <div class="swiper-slide">
+                        <a data-lightbox="thumbs-set" href="<?php echo to_media($thumb); ?>"><img src="<?php echo to_media($thumb); ?>"></a></div>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <?php endif; ?>
+    </div>
+    <?php if($allow_accept): if(!is_null($member_task_join_info)): if($member_task_join_info['status'] == 1): ?>
+    <div data-v-newpage="" class="van-hairline--top van-goods-action">
+        <button data-v-newpage="" id="openWindows" class="van-button van-button--danger van-button--large van-button--square van-goods-action-big-btn" style="background: #fde03f;">
+            <span data-v-newpage="" class="van-button__text" style="color:#834100;">任务提交</span>
+        </button>
+    </div>
+    <?php endif; else: ?>
+    <div data-v-newpage="" class="van-hairline--top van-goods-action" >
+        <button data-v-newpage="" id="replyUrl" class="van-button van-button--danger van-button--large van-button--square van-goods-action-big-btn" style="background: #fde03f;">
+            <span data-v-newpage="" class="van-button__text" style="color:#834100;"><?php if($is_can_op == 1): ?>审核任务<?php else: ?>任务领取<?php endif; ?></span>
+        </button>
+    </div>
+    <?php endif; endif; ?>
+    <!----> <!---->
+  <!--图片保存弹出层-->
+      <div class="hiddenBlack"></div>
+      <div class="saveimgbtn">
+        <input type="hidden" id="imgsrc" value="">
+         <button data-v-newpage="" id="saveimgbtn" class="van-button van-button--large van-button--square van-goods-action-big-btn">
+            <span data-v-newpage="" class="van-button__text" style="color:#2F91FD;">保存到手机</span>
+        </button> 
+        <button data-v-newpage="" id="saveimgcancel" class="van-button  van-button--large van-button--square van-goods-action-big-btn">
+            <span data-v-newpage="" class="van-button__text" style="color:#2F91FD;">取消</span>
+        </button>   
+      </div>
+      
+</div>
+<script src="/static/home/mobile/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="/static/home/mobile/js/lightbox.min.js"></script>
+<script type="text/javascript" src="/static/home/mobile/js/swiper.min.js"></script>
+<script type="text/javascript" src="/static/home/mobile/js/clipboard.min.js"></script>  
+<script type="text/javascript">
+    var swiper = new Swiper('.fujian .swiper-container', {
+        nextButton: '.fujian .swiper-button-next',
+        prevButton: '.fujian .swiper-button-prev',
+        spaceBetween: 0,
+        speed: 1000,
+        autoplay: 3000
+    });
+</script>
+<!-- 弹出层 -->
+<script src="/static/plugins/dialog/js/dialog.js"></script>
+<!-- 弹出层 -->
+<script type="text/javascript" src="/static/plugins/clipboard.min.js"></script>
+<script type="text/javascript" src="/static/home/mobile/js/global.js"></script>
+<script type="text/javascript">
+    var id = <?php echo !empty($item['id'])?$item['id']:''; ?>;
+    $("#replyUrl").click(function(){
+      <?php if($is_can_op == 1): ?>
+        var check_url=new StringBuffer();
+         check_url.append("http://").append(document.domain).append("/home/mytaskaudit/index/id/<?php echo !empty($item['id'])?$item['id']:''; ?>.html?xapp-target=browser");
+		 //window.location.href =document.domain+"/home/mytaskaudit/index/id/<?php echo !empty($item['id'])?$item['id']:''; ?>.html"；
+          window.location.href =check_url.toString();
+         //plus.runtime.openURL(check_url.toString());
+      <?php else: ?>
+     $loading = message('正在抢单','','loading');
+        $.post('/home/task/accept.html', { id: id }, function(res) {
+            message(res.message,res.redirect,res.type);
+            $loading.close();
+        });   
+      <?php endif; ?>
+
+
+        // $(document).dialog({
+        //     type : 'confirm',
+        //     titleText: '任务抢单',
+        //     content: '请按备注及操作说明完成任务，完成后按要求在【我的任务】里上传验证图',
+        //     onClickConfirmBtn: function(){
+        //         $loading = message('正在抢单','','loading');
+        //         $.post('/home/task/accept.html', { id: id }, function(res) {
+        //             message(res.message,res.redirect,res.type);
+        //             $loading.close();
+        //         });
+        //     }
+        // });
+    });
+    //屏幕
+   if(($(window).width())<400)
+   {
+   	  $("a.js-component-link").css("font-size","12px");
+   }
+   else
+   {
+      $("a.js-component-link").css("font-size","15px");
+   }
+  if(($(window).width())<370)
+    {
+    	    $("span.blue").css("font-size","10px");
+            $("span.yellow").css("font-size","10px");
+    }
+    else
+    {
+      $("span.blue").css("font-size","12px");
+      $("span.yellow").css("font-size","12px");
+    }
+   //屏幕图片长按事件
+  	
+
+$("img").on({  
+        touchstart: function(e) { 
+            var x=0;
+            // 长按事件触发  
+            timeOutEvent = setTimeout(function() {  
+              timeOutEvent = 0;
+             var width= $(window).width();
+             var height=document.body.scrollHeight;
+              $(".hiddenBlack").css({"width":width,"height":height,"position":"fixed"});
+              $(".hiddenBlack").show();
+              $(".saveimgbtn").show();           
+               var imgurl =e.target.attributes['src']['nodeValue'];
+               var img = new Image();
+		       img.src=imgurl;
+	           var base64 = getBase64Image(img);
+                 $("#saveimgbtn").off("click").click(function(event){
+                  event.stopPropagation();
+                     lbuilder.Native.saveImage(base64, function(message){
+                      alert("图片保存成功！");
+                      // message('图片保存成功','','sucess');
+                           $(".hiddenBlack").hide();
+    					   $(".saveimgbtn").hide();     
+                  }, function(err){
+                      alert("图片保存失败！ "+err);
+                  });
+            	});
+              
+              //saveimg(src); 	 
+            }, 800);  
+            //长按400毫秒   
+             //e.preventDefault();    
+        },    
+        touchmove: function() {    
+            //clearTimeout(timeOutEvent);    
+            //timeOutEvent = 0;    
+        },    
+        touchend: function() {    
+            clearTimeout(timeOutEvent);     
+            //return false;    
+        } 
+    }) 
+ $(".hiddenBlack").on("click",function(){
+ 		$(this).hide();
+    	$(".saveimgbtn").hide();
+   		
+ });
+  $("#saveimgcancel").on("click",function(){
+  	                 
+       $(".hiddenBlack").hide();
+    	$(".saveimgbtn").hide();        
+  });
+
+  function getBase64Image(img) {
+      var canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+      var ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, img.width, img.height);
+      var dataURL = canvas.toDataURL("image/png");
+      return dataURL
+      // return dataURL.replace("data:image/png;base64,", "");
+}
+  
+	 //$("a.js-component-link").css("font-size","15px");
+      $(window).resize(function(){
+          	var x=window.screen.width;
+            if(x<400)
+            {
+                 $("a.js-component-link").css("font-size","12px");
+            }	
+        	else
+            {
+               $("a.js-component-link").css("font-size","15px");
+            }
+         if(x<370){
+           	$("span.blue").css("font-size","10px");
+            $("span.yellow").css("font-size","10px");
+         }
+        else
+        {
+                     	$("span.blue").css("font-size","12px");
+           				 $("span.yellow").css("font-size","12px");
+        }
+        
+      });
+
+    //抢单
+    $("#openWindows").click(function () {
+        window.location.href ="/home/taskcheck/index/id/<?php echo !empty($item['id'])?$item['id']:''; ?>.html";
+    });
+    $("#task_url").click(function(){
+        copy("#task_url");
+		//var url_user =$("#url").attr("placeholder").replace('http://','').replace("https://",'');
+      	var url_user =$("#url").attr("placeholder")
+        var url=new StringBuffer();
+      if(url_user.indexOf("?")>0)
+      {
+        url.append(url_user).append("&xapp-target=browser");
+      	
+      }else{
+          url.append(url_user).append("?xapp-target=browser");
+      }     
+        $(document).dialog({
+            type : 'confirm',
+            titleShow: false,
+            overlayClose: true,
+            content: '任务相关地址操作',
+            buttonStyle: 'stacked',  // side: 并排; stacked: 堆叠
+            buttons: [
+                {
+                    name: '打开网址',
+                    callback: function() {
+                        //window.location.href = url.toString();
+                       //intent://www.baidu.com?a#Intent;scheme=http;package=com.android.browser;end
+                      
+                      // window.location.href="intent://"+url.toString();
+                      window.location.href="http://"+url.toString();
+                    }
+                },
+                {
+                    name: '复制网址',
+                    class: 'clipboards',
+                    callback: function(e) {
+                              var clipboard = new Clipboard('.clipboards', {
+                                text: function() {
+                                  return $("#url").attr("placeholder");
+                                }
+                              });
+                              clipboard.on('success',
+                                           function(e) {
+                                alert("复制成功");
+                              });
+                              clipboard.on('error',
+                                           function(e) {
+                                console.log(e);
+                               });   
+                    }
+                }
+            ]
+        });
+    });
+  function StringBuffer() {
+    this.__strings__ = new Array();
+	}
+StringBuffer.prototype.append = function (str) {
+    this.__strings__.push(str);
+    return this;    //方便链式操作
+	}
+StringBuffer.prototype.toString = function () {
+    return this.__strings__.join("");
+	}
+</script>
+
+<script type="text/javascript" src="/static/home/mobile/js/layui/layui.js"></script>
+<script type="text/javascript">
+    function remove(id) {
+        $(document).dialog({
+            type : 'confirm',
+            titleText: '放弃接单',
+            content: '确定要放弃编号[' + <?php echo !empty($item['id'])?$item['id']:''; ?> + ']的任务吗？',
+            onClickConfirmBtn: function(){
+                Common.loading.show();
+                $.post('/home/mytaskjoin/del.html', { id: id }, function(res) {
+                    message(res.message,res.redirect,res.type);
+                    Common.loading.hide();
+                });
+            }
+        });
+    }
+
+    var saveFlag = "0";
+    function followUser(user_id){
+        if(saveFlag == '1'){
+            return false;
+        }
+        saveFlag = "1";
+        Common.loading.show();
+        $.post('/home/fans/followUser.html', { user_id: user_id }, function(res) {
+            message(res.message,res.redirect,res.type);
+            Common.loading.hide();
+        });
+    }
+
+    $(function(){
+        //流加载
+        layui.use('flow', function(){
+            var flow = layui.flow;
+            flow.load({
+                elem: '#replies'
+                ,done: function(page, next){
+                    var lis = [];
+                    $.get('/home/task/task_join_ajax?id='+id+'&page='+page, function(res){
+                        layui.each(res.data.data, function(index, item){
+                            var html = ['            <div class="replies-list">',
+                                '                <div class="user-s cl"><i class="u-pic"><img',
+                                '                                src="' + item.avatar + '" onerror="this.src=\'/static/home/mobile/picture/user.png\'"></i>',
+                                '                    <div class="u-info">',
+                                '                        <div class="bt"><span class="name">' + item.username + '</span><span class="level">V' + item.level + '</span></div>',
+                                '                        <div class="time">' + item.audit_time + '</div>',
+                                '                    </div>',
+                                '                    <i class="static static-sh1">已通过</i>',
+                                '                </div>',
+                                '                <div class="replies-desc"><p><span style="color:#E84C3D;"></span></p>',
+                                '                    </div>',
+                                '                <div class="replies-img cl"></div>',
+                                '            </div>'].join("");
+                            $("#flow").append(html);
+                        });
+                        next(lis.join(''), res.data.length > 0 ? true : false);
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

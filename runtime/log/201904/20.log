@@ -1,0 +1,1099 @@
+---------------------------------------------------------------
+[ 2019-04-20T06:27:04+08:00 ] 106.14.190.222 GET /
+[ info ] www.koqawi.cn/ [运行时间：0.035684s][吞吐率：28.02req/s] [内存消耗：4,518.09kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'www.koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000206s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000129s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555712824 AND start_time<1555712824 AND end_time>1555712824 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000108s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555712824 AND start_time<1555712824 AND end_time>1555712824 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555712824 AND start_time<1555712824 AND end_time>1555712824 [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2019-04-20T06:38:04+08:00 ] 101.132.69.5 GET /
+[ info ] koqawi.cn/ [运行时间：0.038072s][吞吐率：26.27req/s] [内存消耗：4,517.98kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000193s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555713484 AND start_time<1555713484 AND end_time>1555713484 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555713484 AND start_time<1555713484 AND end_time>1555713484 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000081s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000072s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555713484 AND start_time<1555713484 AND end_time>1555713484 [ RunTime:0.000177s ]
+---------------------------------------------------------------
+[ 2019-04-20T10:31:30+08:00 ] 101.132.182.68 GET /
+[ info ] koqawi.cn/ [运行时间：0.038030s][吞吐率：26.30req/s] [内存消耗：4,518.01kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000213s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555727490 AND start_time<1555727490 AND end_time>1555727490 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555727490 AND start_time<1555727490 AND end_time>1555727490 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000073s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555727490 AND start_time<1555727490 AND end_time>1555727490 [ RunTime:0.000181s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:32:27+08:00 ] 120.79.206.221 GET /home/auth/login.html
+[ info ] koqawi.cn/home/auth/login.html [运行时间：0.028666s][吞吐率：34.88req/s] [内存消耗：3,858.38kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'auth',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Auth->login[ /www/wwwroot/koqawi.cn/app/home/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/home/mobile/auth/login.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000118s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:35:02+08:00 ] 101.132.69.5 GET /home/task/index/category_id/2.html
+[ info ] koqawi.cn/home/task/index/category_id/2.html [运行时间：0.028266s][吞吐率：35.38req/s] [内存消耗：4,194.74kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'category_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->index[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ VIEW ] ./views/home/mobile/task/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'tasks',
+  5 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000202s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555731302 AND start_time<1555731302 AND end_time>1555731302 AND category_id='2' ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555731302 AND start_time<1555731302 AND end_time>1555731302 AND category_id='2' [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:38:16+08:00 ] 101.132.177.14 GET /home/auth/register.html
+[ info ] koqawi.cn/home/auth/register.html [运行时间：0.026519s][吞吐率：37.71req/s] [内存消耗：3,858.34kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'auth',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Auth->register[ /www/wwwroot/koqawi.cn/app/home/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/home/mobile/auth/register.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'parent_uid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000195s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000116s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:42:42+08:00 ] 120.79.206.221 GET /home/task/detail/id/25.html
+[ info ] koqawi.cn/home/task/detail/id/25.html [运行时间：0.031248s][吞吐率：32.00req/s] [内存消耗：4,292.62kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '25',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->detail[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ VIEW ] ./views/home/mobile/task/detail.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'item',
+  5 => 'is_can_op',
+  6 => 'operate_steps',
+  7 => 'member_task_join_info',
+  8 => 'allow_accept',
+  9 => 'msgtt',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000197s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT a.*,b.username,b.avatar,b.level FROM tb_task a LEFT JOIN tb_member b ON a.uid=b.uid WHERE a.id=25 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` WHERE  `task_id` = 25  AND `status` = 2  AND `delflag` = 1 LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task_operate_steps WHERE task_id=25 ORDER BY sort [ RunTime:0.000089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` WHERE  (  id = 2 ) LIMIT 1 [ RunTime:0.000097s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:43:52+08:00 ] 101.132.177.14 GET /home/profile/phone.html
+[ info ] koqawi.cn/home/profile/phone.html [运行时间：0.027066s][吞吐率：36.95req/s] [内存消耗：3,779.85kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'profile',
+    2 => 'phone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Profile->phone[ /www/wwwroot/koqawi.cn/app/home/controller/Profile.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:45:27+08:00 ] 101.132.97.6 GET /index.php?m=&c=index&a=novel
+[ info ] koqawi.cn/index.php?m=&c=index&a=novel [运行时间：0.037309s][吞吐率：26.80req/s] [内存消耗：4,520.06kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'm' => '',
+  'c' => 'index',
+  'a' => 'novel',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000195s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555731927 AND start_time<1555731927 AND end_time>1555731927 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555731927 AND start_time<1555731927 AND end_time>1555731927 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000106s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000084s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555731927 AND start_time<1555731927 AND end_time>1555731927 [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:52:47+08:00 ] 47.92.116.44 GET /home/task/detail/id/30.html
+[ info ] koqawi.cn/home/task/detail/id/30.html [运行时间：0.032273s][吞吐率：30.99req/s] [内存消耗：4,292.57kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '30',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->detail[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ VIEW ] ./views/home/mobile/task/detail.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'item',
+  5 => 'is_can_op',
+  6 => 'operate_steps',
+  7 => 'member_task_join_info',
+  8 => 'allow_accept',
+  9 => 'msgtt',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000218s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT a.*,b.username,b.avatar,b.level FROM tb_task a LEFT JOIN tb_member b ON a.uid=b.uid WHERE a.id=30 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` WHERE  `task_id` = 30  AND `status` = 2  AND `delflag` = 1 LIMIT 1 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task_operate_steps WHERE task_id=30 ORDER BY sort [ RunTime:0.000095s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` WHERE  (  id = 6 ) LIMIT 1 [ RunTime:0.000105s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:58:28+08:00 ] 47.92.124.187 GET /home/account/info.html
+[ info ] koqawi.cn/home/account/info.html [运行时间：0.028265s][吞吐率：35.38req/s] [内存消耗：3,821.58kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'account',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Account->info[ /www/wwwroot/koqawi.cn/app/home/controller/Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000234s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000138s ]
+---------------------------------------------------------------
+[ 2019-04-20T11:59:58+08:00 ] 47.97.216.82 GET /admin/member/index.html
+[ info ] koqawi.cn/admin/member/index.html [运行时间：0.016713s][吞吐率：59.83req/s] [内存消耗：2,384.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'member',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-20T11:59:58+08:00 ] 47.97.216.82 GET /admin/auth/login.html
+[ info ] koqawi.cn/admin/auth/login.html [运行时间：0.016889s][吞吐率：59.21req/s] [内存消耗：2,397.04kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Auth->login[ /www/wwwroot/koqawi.cn/app/admin/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/admin/pc/auth/login.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'admin',
+  3 => 'treeMenu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-20T12:26:06+08:00 ] 47.92.50.96 GET /index.php?m=&c=index&a=vip
+[ info ] koqawi.cn/index.php?m=&c=index&a=vip [运行时间：0.039226s][吞吐率：25.49req/s] [内存消耗：4,520.06kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'm' => '',
+  'c' => 'index',
+  'a' => 'vip',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000205s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000121s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555734366 AND start_time<1555734366 AND end_time>1555734366 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555734366 AND start_time<1555734366 AND end_time>1555734366 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000091s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000119s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555734366 AND start_time<1555734366 AND end_time>1555734366 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[ 2019-04-20T12:30:15+08:00 ] 101.132.102.45 GET /home/auth/findpwd.html
+[ info ] koqawi.cn/home/auth/findpwd.html [运行时间：0.027709s][吞吐率：36.09req/s] [内存消耗：3,940.22kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'auth',
+    2 => 'findpwd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Auth->findpwd[ /www/wwwroot/koqawi.cn/app/home/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/home/mobile/auth/findpwd.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000184s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000118s ]
+---------------------------------------------------------------
+[ 2019-04-20T12:50:41+08:00 ] 47.92.31.65 GET /admin/auth/login.html
+[ info ] koqawi.cn/admin/auth/login.html [运行时间：0.019249s][吞吐率：51.95req/s] [内存消耗：2,397.04kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'host' => 'koqawi.cn',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Auth->login[ /www/wwwroot/koqawi.cn/app/admin/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/admin/pc/auth/login.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'admin',
+  3 => 'treeMenu',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-20T15:09:43+08:00 ] 117.136.19.149 GET /
+[ info ] koqawi.cn/ [运行时间：0.036456s][吞吐率：27.43req/s] [内存消耗：4,518.54kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000192s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555744183 AND start_time<1555744183 AND end_time>1555744183 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000128s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555744183 AND start_time<1555744183 AND end_time>1555744183 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000101s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555744183 AND start_time<1555744183 AND end_time>1555744183 [ RunTime:0.000190s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:01+08:00 ] 117.136.19.149 GET /home/account.html
+[ info ] koqawi.cn/home/account.html [运行时间：0.029021s][吞吐率：34.46req/s] [内存消耗：3,823.39kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'account',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Account->index[ /www/wwwroot/koqawi.cn/app/home/controller/Account.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000151s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:03+08:00 ] 117.136.19.149 GET /home/auth/login.html
+[ info ] koqawi.cn/home/auth/login.html [运行时间：0.027330s][吞吐率：36.59req/s] [内存消耗：3,859.85kb] [文件加载：58]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'auth',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/home/account.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Auth->login[ /www/wwwroot/koqawi.cn/app/home/controller/Auth.php ]
+[ info ] [ VIEW ] ./views/home/mobile/auth/login.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000188s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000122s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:12+08:00 ] 117.136.19.149 GET /home/task/detail/id/30.html
+[ info ] koqawi.cn/home/task/detail/id/30.html [运行时间：0.032665s][吞吐率：30.61req/s] [内存消耗：4,293.85kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '30',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->detail[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ VIEW ] ./views/home/mobile/task/detail.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'item',
+  5 => 'is_can_op',
+  6 => 'operate_steps',
+  7 => 'member_task_join_info',
+  8 => 'allow_accept',
+  9 => 'msgtt',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SELECT a.*,b.username,b.avatar,b.level FROM tb_task a LEFT JOIN tb_member b ON a.uid=b.uid WHERE a.id=30 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` WHERE  `task_id` = 30  AND `status` = 2  AND `delflag` = 1 LIMIT 1 [ RunTime:0.000131s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task_operate_steps WHERE task_id=30 ORDER BY sort [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` WHERE  (  id = 6 ) LIMIT 1 [ RunTime:0.000100s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:13+08:00 ] 117.136.19.149 GET /home/task/task_join_ajax?id=30&page=1
+[ info ] koqawi.cn/home/task/task_join_ajax?id=30&page=1 [运行时间：0.028910s][吞吐率：34.59req/s] [内存消耗：4,253.41kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'task_join_ajax',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/home/task/detail/id/30.html',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '30',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->task_join_ajax[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000186s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` `task_join` INNER JOIN `tb_member` `member` ON `task_join`.`uid`=`member`.`uid` WHERE  `task_join`.`task_id` = 30  AND `task_join`.`status` = 3  AND `task_join`.`delflag` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT `task_join`.*,`member`.`uid`,`member`.`username`,`member`.`level`,`member`.`avatar` FROM `tb_task_join` `task_join` INNER JOIN `tb_member` `member` ON `task_join`.`uid`=`member`.`uid` WHERE  `task_join`.`task_id` = 30  AND `task_join`.`status` = 3  AND `task_join`.`delflag` = 1 LIMIT 0,15 [ RunTime:0.000133s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:16+08:00 ] 117.136.19.149 POST /home/fans/followUser.html
+[ info ] koqawi.cn/home/fans/followUser.html [运行时间：0.028509s][吞吐率：35.08req/s] [内存消耗：3,774.49kb] [文件加载：55]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'fans',
+    2 => 'followUser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://koqawi.cn',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/home/task/detail/id/30.html',
+  'content-length' => '11',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => '175',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000120s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:23+08:00 ] 117.136.19.149 GET /home/task/detail/id/25.html
+[ info ] koqawi.cn/home/task/detail/id/25.html [运行时间：0.035661s][吞吐率：28.04req/s] [内存消耗：4,293.87kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '25',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->detail[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ VIEW ] ./views/home/mobile/task/detail.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'item',
+  5 => 'is_can_op',
+  6 => 'operate_steps',
+  7 => 'member_task_join_info',
+  8 => 'allow_accept',
+  9 => 'msgtt',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SELECT a.*,b.username,b.avatar,b.level FROM tb_task a LEFT JOIN tb_member b ON a.uid=b.uid WHERE a.id=25 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` WHERE  `task_id` = 25  AND `status` = 2  AND `delflag` = 1 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task_operate_steps WHERE task_id=25 ORDER BY sort [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` WHERE  (  id = 2 ) LIMIT 1 [ RunTime:0.000123s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:10:24+08:00 ] 117.136.19.149 GET /home/task/task_join_ajax?id=25&page=1
+[ info ] koqawi.cn/home/task/task_join_ajax?id=25&page=1 [运行时间：0.032592s][吞吐率：30.68req/s] [内存消耗：4,257.33kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'task',
+    2 => 'task_join_ajax',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'koqawi.cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1',
+  'referer' => 'http://koqawi.cn/home/task/detail/id/25.html',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '25',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Task->task_join_ajax[ /www/wwwroot/koqawi.cn/app/home/controller/Task.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_join` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tb_task_join` `task_join` INNER JOIN `tb_member` `member` ON `task_join`.`uid`=`member`.`uid` WHERE  `task_join`.`task_id` = 25  AND `task_join`.`status` = 3  AND `task_join`.`delflag` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `task_join`.*,`member`.`uid`,`member`.`username`,`member`.`level`,`member`.`avatar` FROM `tb_task_join` `task_join` INNER JOIN `tb_member` `member` ON `task_join`.`uid`=`member`.`uid` WHERE  `task_join`.`task_id` = 25  AND `task_join`.`status` = 3  AND `task_join`.`delflag` = 1 LIMIT 0,15 [ RunTime:0.000186s ]
+---------------------------------------------------------------
+[ 2019-04-20T15:15:42+08:00 ] 202.108.211.151 GET /
+[ info ] www.koqawi.cn/ [运行时间：0.038222s][吞吐率：26.16req/s] [内存消耗：4,518.80kb] [文件加载：67]
+[ info ] [ LANG ] /www/wwwroot/koqawi.cn/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.koqawi.cn',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ /www/wwwroot/koqawi.cn/app/home/controller/Index.php ]
+[ info ] [ VIEW ] ./views/home/mobile/index/index.phtml [ array (
+  0 => 'controller',
+  1 => 'action',
+  2 => 'site',
+  3 => 'member',
+  4 => 'categories',
+  5 => 'banners',
+  6 => 'notices',
+  7 => 'withdraws',
+  8 => 'today_credit1',
+  9 => 'today_credit2',
+  10 => 'tasks',
+  11 => 'pageCount',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000191s ] mysql:host=localhost;dbname=wl;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_config` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_config` LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_task_category` [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_task_category` ORDER BY order_by desc LIMIT 0,100 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SELECT SUM((give_credit2-fee)/ticket_num) AS credit2,SUM(give_credit1/ticket_num) AS credit1 FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period*3600+create_time<1555744542 AND start_time<1555744542 AND end_time>1555744542 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_banner` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_banner` WHERE  `is_display` = 1 ORDER BY order_by desc LIMIT 10 [ RunTime:0.000118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_notice` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_notice` WHERE  `is_display` = 1 ORDER BY order_by desc,id desc LIMIT 10 [ RunTime:0.000112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_withdraw` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tb_withdraw` WHERE  `status` = 1 ORDER BY id DESC LIMIT 0,10 [ RunTime:0.000125s ]
+[ sql ] [ SQL ] SELECT * FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555744542 AND start_time<1555744542 AND end_time>1555744542 ORDER BY top_end_time DESC, end_time ASC, id DESC LIMIT 0,15 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tb_member` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 175 ) LIMIT 1 [ RunTime:0.000100s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 165 ) LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 123 ) LIMIT 1 [ RunTime:0.000090s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `tb_member` WHERE  (  uid = 103 ) LIMIT 1 [ RunTime:0.000074s ]
+[ sql ] [ SQL ] SELECT COUNT(1) AS num FROM tb_task WHERE is_complete=0 AND is_display=1 AND check_period_time<1555744542 AND start_time<1555744542 AND end_time>1555744542 [ RunTime:0.000199s ]

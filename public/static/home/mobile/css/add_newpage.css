@@ -1,0 +1,431 @@
+.show-item{
+    display:block  !important;
+}
+.step-task-item{
+    width: 100%;
+    overflow: initial;
+    margin: 0 0 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    padding-bottom: 22px;
+    padding-top: 10px;
+}
+.form-div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 55px;
+}
+.step-list{
+    position: relative;
+    flex: 1;
+    overflow: initial;
+    font-size: 14px;
+    color: #969799;
+}
+.step-process{
+    color: #323233;
+}
+.step-finish{
+    color: #323233;
+}
+.add-step-task-item{
+    float: left;
+    display: flex;
+}
+.add-step-task-item:last-child{
+    right: 10px;
+    width: auto;
+}
+.add-step-task-item .step-item-title{
+    align-items: center;
+    justify-content: left;
+    padding: 0px 8px;
+    display: inline-block;
+    font-size: 12px;
+    transform: none;
+}
+.add-step-task-item:first-child .step-item-title{
+    float: left;
+    margin-left: 10px;
+}
+.add-step-task-item:last-child .step-item-title{
+    transform: none;
+    margin-left: 0;
+    text-align: right;
+}
+.add-step-task-item .circle-container{
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    padding: 0 8px;
+    background-color: #fff;
+    z-index: 1;
+    margin-left: -14px;
+}
+.add-step-task-item:first-child .circle-container{
+    margin-left: 24px;
+}
+.add-step-task-item.step-finish .step-line{
+    background-color: #ff592b;
+}
+.add-step-task-item .step-process .circle-container{
+    top:20px;
+    margin-left: 24px;
+}
+.add-step-task-item:last-child .circle-container{
+    left: auto;
+    right: 34px;
+}
+.add-step-task-item:first-child.step-process .van-icon{
+    margin-left: 0px;
+}
+.add-step-task-item.step-process .van-icon{
+    margin-left: 24px;
+    top: -8px;
+}
+.add-step-task-item:first-child .van-step__circle{
+    margin-left: 0px;
+}
+.add-step-task-item .van-step__circle{
+    margin-left: 27px;
+}
+.add-step-task-item .step__circle{
+    font-size: 12px;
+    color: #07c160;
+    display: block;
+    position: relative;
+    font: 14px/1 vant-icon;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.add-step-task-item .step-line{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #ebedf0;
+}
+.add-step-task-item:first-child .step-line{
+    margin-left: 34px;
+}
+.add-step-task-item:last-child .step-line{
+    width: 0;
+}
+
+.step{
+    display: none;
+}
+.error-message{
+    color: #f44;
+    font-size: 12px;
+    text-align: left;
+}
+.action-bar{
+    padding: 8px 8px 18px;
+    background-color: #fff;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: fixed;
+}
+.action-step{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.danger{
+    color: #fff;
+    border: 1px solid #FD561D;
+    background: #FD561D;
+    width: 100%;
+}
+.button-danger{
+    background-image: linear-gradient(-30deg,#ff4242,#ff8b04);
+    border: none;
+    line-height: 40px;
+    font-size: 15px;
+    height: 40px;
+    margin: 0 6px;
+    border-radius: 40px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 0;
+}
+.warning{
+    background-color: #c9c9c9;
+    border-color: #c9c9c9;
+}
+.button-warning{
+    line-height: 40px;
+    height: 40px;
+    font-size: 15px;
+    margin: 0 6px;
+    border-radius: 40px;
+    border: none;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    padding: 0;
+
+}
+.button-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+}
+.select-catagory{
+    width: 35%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 120px;
+    overflow: scroll;
+    background-color: #fafafa;
+    -webkit-overflow-scrolling: touch;
+    font-size: 14px;
+}
+.catagory-item{
+    width: 65%;
+    height: 100%;
+    padding-left: 15px;
+    margin-left: 35%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.tree-select{
+    position: relative;
+    line-height: 44px;
+    padding: 0 9px 0 15px;
+}
+.tree-select-active{
+    font-weight: 700;
+    background-color: #fff;
+}
+.tree-select-active:after{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:3.6px;
+    background-color:#f44;
+    content:""
+}
+.catagor-ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.catagory-tree-select{
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    position: relative;
+    margin-top: 10px;
+    height: calc(100vh - 201px) !important;
+}
+.catagory-select-item{
+    position: relative;
+    font-weight: 700;
+    line-height: 44px;
+}
+.catagory-select-item-active{
+    color:#f44;
+}
+.catagory-select-selected{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    height: 24px;
+    margin: auto 0;
+    line-height: 24px;
+}
+.step-choose-page{
+    display: none;
+    z-index: 8;
+    position: fixed;
+    max-height: 90%;
+    color: #323233;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+    overflow-y: auto;
+    background-color: #fff;
+    transition: .3s ease-out;
+}
+.step-actionsheet{
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    max-height: 90%;
+    color: #323233;
+}
+.step-actionsheet_item{
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+.hairline-top{
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ebedf0;
+}
+.hairline-top:after{
+    border-top-width: 1px;
+}
+[class*="hairline"]:after{
+    content:" ";
+    position:absolute;
+    pointer-events:none;
+    box-sizing:border-box;
+    top:-50%;
+    left:-50%;
+    right:-50%;
+    bottom:-50%;
+    -webkit-transform:scale(.5);
+    transform:scale(.5);
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ebedf0;
+
+}
+.step-actionsheet_name{
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+.step-item .icon{
+    background-color: #969799;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 5px;
+}
+.old-task-item{
+    display: none;
+}
+.edit-box{
+    width: 340px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.edit-box .header{
+    padding: 0 15px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(-30deg,#ff4242,#ff8b04);
+    font-weight: 700;
+    font-size: 16px;
+}
+.edit-box .content{
+    margin-top: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+[id*="uploadForm"]{
+    width: 100px;
+    height: 100px;
+    background: url(../images/img.png) no-repeat;
+    background-size: auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.uploadForm{
+    width: 100px;
+    height: 100px;
+    background: url(../images/img.png) no-repeat;
+    background-size: auto;
+    background-size: cover;
+    cursor: pointer;
+}
+.show-btn{
+    flex: 1;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    background-color: #f44;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    height: 44px;
+    line-height: 42px;
+    font-size: 16px;
+    border-radius: 2px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust: 100%;
+}
+.button-show{
+    background-image: linear-gradient(-30deg,#ff4242,#ff8b04);
+    border: none;
+    line-height: 40px;
+    height: 40px;
+    font-size: 15px;
+    margin: 0 6px;
+    border-radius: 40px;
+}
+#addStepData{
+    color: #FE4B1C;
+    border: 1px solid #FE4B1C;
+}
+.new-task-item{
+    display: none;
+}
+.van-stepper .stepper-input{
+    width: 150px;
+}
+.stepper-input{
+    width: 30px;
+    height: 26px;
+    padding: 1px;
+    border: 0;
+    margin: 1px;
+    background-color: #f2f3f5;
+    border-width: 1px 0;
+    border-radius: 0;
+    box-sizing: content-box;
+    color: #323233;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-appearance: none;
+}
